@@ -1,0 +1,81 @@
+.home-wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    .home-content{
+        display: flex;
+    }
+
+    .home-title{
+        font-weight: bold;
+        color: #222;
+    }
+
+    .stories-container{
+        width: 90%;
+        background: white;
+        margin-top: 30px;
+
+        .stories-wrapper{
+            width: 100%;
+
+            .stories-card{
+
+                .stories-card-img{
+                    width: 150px;
+                    height: 200px;
+                    background: #b3b3b3;
+                    border-radius: 5px;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    color: white;
+                    cursor: pointer;
+                    transition: all .2s;
+                    box-shadow: 0px 10px 20px rgba($color: #000000, $alpha: 0.1);
+
+                    .stories-card-user{
+                        width: 24px;
+                        height: 24px;
+                        background: #222;
+                    }
+                    
+                    p{
+                        width: 120px;
+                        font-size: 14pt;
+                        font-weight: bold;
+                        word-break: break-all;                     
+                    }
+                }
+
+                .stories-card-img:hover{
+                    transform: scale(1.1);
+                    box-shadow: 0px 5px 20px rgba($color: #000000, $alpha: 0.1);
+                }
+            }
+
+        }
+    }
+    
+}
+
+
+.btn-add-post{
+    width: 70px;
+    height: 70px;
+    background: #222;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    cursor: pointer;
+    transition: all .2s;
+    z-index: 99;
+    box-shadow: 0px 10px 20px rgba($color: #000000, $alpha: 0.1);
+}
+
+.btn-add-post:hover{
+    transform: scale(1.1);
+}
