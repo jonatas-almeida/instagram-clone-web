@@ -9,13 +9,15 @@ import { HomeComponent } from './views/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
+import { SideButtonsComponent } from './components/side-buttons/side-buttons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    SideButtonsComponent
   ],
   imports: [
     BrowserModule,
