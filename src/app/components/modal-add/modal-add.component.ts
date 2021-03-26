@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-modal-add',
+  templateUrl: './modal-add.component.html',
+  styleUrls: ['./modal-add.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class ModalAddComponent implements OnInit {
 
   constructor(private modalService: NgbModal) { }
 

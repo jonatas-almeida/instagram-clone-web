@@ -1,9 +1,22 @@
 <div class="side-buttons-container">
     <div class="side-buttons-content">
         <div class="side-buttons">
-            <div class="side-button add"><img src="../../../assets/icons/add.svg"/></div>
+            <div class="side-button add" (click)="openModal(content)"><img src="../../../assets/icons/add.svg"/></div>
             <div class="side-button saved"><img src="../../../assets/icons/bookmark.svg"/></div>
             <div class="side-button share"><img src="../../../assets/icons/share-social.svg"/></div>
         </div>
     </div>
 </div>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Novo post</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      
+    </div>
+</ng-template>
+
