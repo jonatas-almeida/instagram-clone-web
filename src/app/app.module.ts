@@ -10,7 +10,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { SideButtonsComponent } from './components/side-buttons/side-buttons.component';
-import { ModalAddComponent } from './components/modal-add/modal-add.component';
+import { RegisterComponent } from './views/register/register.component';
+import { LoginComponent } from './views/login/login.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ModalAddComponent } from './components/modal-add/modal-add.component';
     NavbarComponent,
     SideMenuComponent,
     SideButtonsComponent,
-    ModalAddComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
