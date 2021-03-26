@@ -13,6 +13,7 @@ export class SideButtonsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //Abre o modal de adicionar os posts
   openModal(content){
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'});
   }
