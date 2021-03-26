@@ -16,9 +16,10 @@
       </button>
     </div>
     <div class="modal-body">
-      <form class="post-form">
-        <input type="file">
-        <textarea cols="50"></textarea>
+      <form class="post-form" [formGroup]="postForm">
+        <input type="file" name="post_image" formControlName="post_image">
+        <textarea cols="50" name="post_description" formControlName="post_description"></textarea>
+        <button class="btn-add-post">Adicionar</button>
       </form>
     </div>
 </ng-template>
